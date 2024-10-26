@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="historiaPong.css">
+    <title>História do jogo do Ping Pong</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.history.back()" title="Pressione 'ESC' para sair">Voltar</button>
+
+    <div class="historia-container">
+        <p>Pong, o jogo que deu origem à indústria de videogames há 5 décadas.        
+            Na época, Nolan Bushnell e Ted Dabney haviam acabado de montar uma empresa de jogos de computador, à qual deram o nome de Atari.</p>      
+        </p>       
+            E foi durante o exercício de treinamento de um dos novos engenheiros da companhia que nasceu Pong basicamente, uma simulação simplificada de uma partida de tênis de mesa, o ping-pong.
+            Se nos dias de hoje um gabinete de fliperama é algo comum, nos anos 70 um gabinete ligado a um monitor de tubo.</p>
+        <p>
+            "Continuamos mexendo com ele e fazendo pequenas melhorias. E uma das melhorias, de repente, tornou o jogo completamente divertido."</p>
+        <p>
+            O jogo em preto e branco, composto por duas barras verticais (raquetes), uma linha pontilhada (a rede) e um pequeno quadrado (a bolinha), tinha como objetivo usar a raquete para rebater a bola.</p>
+        <p>
+            "O padrão de excelência era que se conseguisse fazer US$ 20 por dia, daria muito dinheiro. E o Pong estava dando como retorno US$ 35, US$ 40, às vezes US$ 50, alguns dias. Estava tão acima do padrão de excelência que sabíamos que era um sucesso."
+            Foi então que ele decidiu que a Atari fabricaria e venderia o jogo por conta própria.</p>
+
+        <a href="https://www.bbc.com/portuguese/geral-60039831" target="_blank" class="saiba-mais">Saiba Mais</a>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                window.location.href = 'pong.html';
+            }
+        });
+    </script>
+
+</body>
+</html>

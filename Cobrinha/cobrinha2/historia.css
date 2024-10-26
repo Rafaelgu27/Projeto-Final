@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.historia-container {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.historia-container p {
+    margin-bottom: 15px;
+}
+
+.saiba-mais {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+}
+
+.saiba-mais:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #004f0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.botao-voltar:hover {
+    background-color: #003a07;
+}
+
+@media (max-width: 1200px) {
+    .historia-container {
+        padding: 15px;
+    }
+
+    .saiba-mais {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .botao-voltar {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .historia-container {
+        padding: 10px;
+    }
+
+    .saiba-mais {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .botao-voltar {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .historia-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .saiba-mais {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    .botao-voltar {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+        top: 10px;
+        left: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #000000, #4f4f4f);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    margin-bottom: 2rem; /* Espaço entre o título e os jogos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o título */
+}
+
+.game-selection {
+    display: flex;
+    flex-direction: column; /* Coloca os jogos um embaixo do outro */
+    align-items: center; /* Centraliza horizontalmente os jogos */
+}
+
+.game {
+    width: 80%; /* Ajusta a largura dos jogos */
+    max-width: 400px; /* Largura máxima para os jogos */
+    margin: 1rem 0; /* Espaçamento vertical entre os jogos */
+}
+
+.game p {
+    margin: 0; /* Remove margens padrão */
+    font-size: 1.5rem; /* Tamanho maior para texto do jogo */
+    color: #ffffff;
+}
+
+.game a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do pai */
+    display: block;
+}
+
+.game:hover {
+    transform: scale(1.05); /* Efeito de aumentar ao passar o mouse */
+    background: rgba(255, 255, 255, 0.2); /* Efeito ao passar o mouse */
+}
+
+.botao-voltar {
+    position: absolute;
+    top: 2vh; /* Distância do topo da tela */
+    left: 2vw; /* Distância da esquerda */
+    background-color: #004f0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
