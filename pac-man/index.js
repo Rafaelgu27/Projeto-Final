@@ -486,7 +486,7 @@ window.addEventListener("keydown", function (event) {
             botaoIniciar.click(); // Simula um clique no botão de iniciar o jogo
         }
     } else if(tecla === 27){
-        window.location.href = "../inicio.html";
+        window.location.href = "../index.html";
     }
 
     if (estadoJogo === 'gameOver') {

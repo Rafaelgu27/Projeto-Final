@@ -225,6 +225,11 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+window.addEventListener('keydown', (e) => {
+  if(e.keyCode === 27){
+      window.location.href = "../index.html";
+  }
+});
 
 document.addEventListener('keydown', movePlayer1);
 document.addEventListener('keydown', movePlayer2);
