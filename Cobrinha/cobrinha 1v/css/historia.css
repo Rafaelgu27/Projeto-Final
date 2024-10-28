@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #121212;
+    color: #E0E0E0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,10 +13,10 @@ body {
 
 .historia-container {
     max-width: 800px;
-    background: #fff;
+    background: gray;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: justify;
 }
 
@@ -29,11 +29,11 @@ body {
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 1rem;
-    color: #007bff;
+    color: #BB86FC;
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
-    background-color: #fff;
+    border: 1px solid #BB86FC;
+    background-color: #2C2C2C;
 }
 
 .saiba-mais:hover {
@@ -55,6 +55,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     z-index: 2;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .botao-voltar:hover {

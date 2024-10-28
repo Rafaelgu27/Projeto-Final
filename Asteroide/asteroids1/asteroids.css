@@ -45,7 +45,7 @@ canvas {
     margin-top: 25%;
 }
 
-.pontuacao, .recorde {
+.pontuacao, .recorde3 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2vw; /* Tamanho da fonte em proporção à largura da tela */
     color: rgb(14, 14, 150);

@@ -58,13 +58,12 @@ restartButton.style.display = 'none';
 const iniciarButton = document.getElementById('startButton')
 
 let pontuacao = 0;
-let recorde = 0;
+let recorde3 = 0;
 
 let vidas = 5;
 const spanVidas = document.querySelector('.vidas');
 
 function toggleMute() {
-    fundoSom.muted = !audioMuted;
     audioMuted = !audioMuted;
     naveColisao.muted = audioMuted;
     tiroSom.muted = audioMuted;
@@ -470,22 +469,22 @@ function desenharGameOver() {
 
 // Função para carregar o recorde do localStorage
 function carregarRecorde() {
-    recorde = localStorage.getItem('recorde');
-    if (recorde !== null) {
-        recorde = parseInt(recorde, 10);
+    recorde3 = localStorage.getItem('recorde3');
+    if (recorde3 !== null) {
+        recorde3 = parseInt(recorde3, 10);
     } else {
-        recorde = 0; // Inicializa com 0 se não houver um recorde armazenado
+        recorde3 = 0; // Inicializa com 0 se não houver um recorde armazenado
     }
-    document.getElementById('recorde').innerText = `Recorde: ${recorde}`;
+    document.getElementById('recorde3').innerText = `Recorde: ${recorde3}`;
 }
 
 // Função para atualizar o recorde no localStorage
 function atualizarRecorde() {
-    if (pontuacao > recorde) {
-        recorde = pontuacao; // Atualiza o recorde se a pontuação for maior
-        localStorage.setItem('recorde', recorde);
+    if (pontuacao > recorde3) {
+        recorde3 = pontuacao; // Atualiza o recorde se a pontuação for maior
+        localStorage.setItem('recorde3', recorde3);
     }
-    document.getElementById('recorde').innerText = `Recorde: ${recorde}`;
+    document.getElementById('recorde3').innerText = `Recorde: ${recorde3}`;
 }
 
 // Função para atualizar a pontuação na interface HTML e verificar o recorde
