@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Tetris</title>
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.history.back()" title="Pressione 'ESC' para sair">← Voltar</button>
+    
+    <div class="historia-container">
+        <p>
+            Todo o conceito de Tetris foi criado por uma única pessoa: o russo Alexey Pajitnov. No início dos anos 1980, ainda durante o período da Guerra Fria, ele passou a trabalhar na Academia Soviética de Ciências como pesquisador e engenheiro de software para desenvolver novas tecnologias para o regime, como a de reconhecimento de fala.
+        </p>
+        <p>
+            Só que Pajitnov decidiu usar os recursos à sua disposição para criar algo diferente. Em entrevistas posteriores, ele disse que queria criar um game por considerar os jogos uma forma muito mais eficiente de conhecer as pessoas e seu comportamento, principalmente em termos de nuances e detalhes. E foi assim que ele colocou a mão na massa.
+        </p>
+            Foi assim que, em 1984, o Tetris nasceu em sua primeira versão, que era bastante rudimentar. Programado em um Electronika 60, um computador soviético da época, ele apresentava as peças com caracteres de texto, já que o sistema não tinha mapeamento de bits para criar as imagens. E, mesmo assim, o jogo foi um sucesso.
+        <p>
+            A ideia por trás de tudo era bem simples e adaptava a mecânica do pentaminó — um quebra-cabeça de encaixe de peças —, mas simplificando ao fazer com que essas peças fossem compostas por quatro ao invés de cinco blocos. Tanto que é daí que vem o nome: Tetris nada mais é do que uma mistura de tetra (quatro, em grego) com tênis, que era o esporte favorito de Pajitnov.
+        </p>
+        <a href="https://canaltech.com.br/games/a-historia-do-tetris-o-jogo-mais-popular-do-mundo-244604/" target="_blank" class="saiba-mais">Saiba Mais</a>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                window.location.href = 'cobrinha.html';
+            }
+        });
+    </script>
+</body>
+</html>
