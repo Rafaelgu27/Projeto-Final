@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <title>Ping Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+  <a href="../inicio.html" title="Pressione 'ESC' para sair" class="botao-voltar">← Voltar</a>
+  
+  <a href="historiaPong.html" class="botao-historia">📚 História</a>
+  <a href="toturialPong.html" class="botao-tutorial">📚 Tutorial</a>
+
+  <div class="game-container">
+
+    <div class="settings">
+      <label for="player1Name">Jogador 1</label>
+      <input type="text" id="player1Name">
+
+      <label for="player2Name">Jogador 2</label>
+      <input type="text" id="player2Name">
+
+      <label for="numGames">Número de Pontos</label>
+      <input type="number" id="numGames">
+
+      <button id="startGame">Iniciar Jogo</button>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2024 Todos os créditos autorais pertencem a <a href="https://atari.com/?srsltid=AfmBOopN-VAVG2HCr4nI1cyJeKA9aVLKN94HVKBP7NIPPMPonkik3fFo" target="_blank">Atari</a>
+  </div>
+
+  <script>
+    document.getElementById('startGame').addEventListener('click', function() {
+      const player1Name = document.getElementById('player1Name').value || 'Jogador 1';
+      const player2Name = document.getElementById('player2Name').value || 'Jogador 2';
+      const numGames = document.getElementById('numGames').value || 3;
+
+      window.location.href = `indexPong.html?player1=${encodeURIComponent(player1Name)}&player2=${encodeURIComponent(player2Name)}&games=${numGames}`;
+    });
+  </script>
+
+</body>
+</html>

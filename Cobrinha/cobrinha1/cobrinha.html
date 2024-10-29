@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Cobrinha</title>
+</head>
+<body>
+    <a href="../index.html" title="Pressione 'ESC' para sair" class="botao-voltar">← Voltar</a>
+
+    <div class="pontuacao">
+        Pontuação: <span class="pontuacao--valor">00</span>
+    </div>
+
+    <div class="menu-screen">
+        <span class="game-over">Game Over</span>
+        <span class="pontuacao-final">Pontuação: <span>00</span></span>
+    </div>
+
+    <button id="restartButton">► Jogar Novamente</button>
+
+    <canvas width="570" height="570" style="border: 15px solid #004f0c;"></canvas>
+
+    <div class="instrucoes">
+
+        <p>Use as setas para mover a cobra.</p>
+        
+        <br>
+        <br>
+
+        <img src="setas.png" alt="">
+    </div>
+
+    <button class="botao-mute" title="Pressione 'M' para mutar o som">🔊</button>
+
+    <a href="historiaCobrinha.html" title="Pressione 'H' para ir para a história" class="botao-historia">📚 História</a>
+
+    <div class="copyright">
+        © 2024 Parte do projeto desenvolvida com recursos do canal Manual do Dev
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

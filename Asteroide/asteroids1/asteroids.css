@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Preenche toda a altura da tela */
+    font-family: 'Press Start 2P', cursive;
+}
+
+canvas {
+    display: block;
+    max-height: 80vh; /* Limita a altura do canvas */
+    margin-top: 5vh; /* Espaço acima do canvas */
+}
+
+
+.game-container {
+    display: flex;
+    width: 100%; /* A largura do contêiner é total */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin-top: 20px; /* Espaço acima do contêiner */
+    position: absolute; /* Necessário para posicionar o botão dentro deste contêiner */
+}
+
+.vidas {
+    display: flex;
+    flex-direction: column; /* Coloca as naves em coluna */
+    align-items: flex-end; /* Alinha as vidas ao lado direito */
+    padding-left: 20px; /* Espaço entre o canvas e as vidas */
+    margin-top: 50px; /* Aumente este valor para mover as vidas para baixo */
+}
+
+
+.vidas img {
+    width: 2.5vw; /* Ajuste o tamanho da imagem da nave em proporção à tela */
+    margin-bottom: 50px; /* Espaço entre as imagens */
+}
+
+.pontuacao-recorde {
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 25%;
+}
+
+.pontuacao, .recorde3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vw; /* Tamanho da fonte em proporção à largura da tela */
+    color: rgb(14, 14, 150);
+    text-align: center;
+    margin: 5px 0; /* Espaçamento entre os dois elementos */
+}
+
+#restartButton {
+    border: none;
+    border-radius: 100px;
+    padding: 1vh 2vw; /* Tamanho do padding em unidades relativas */
+    font-size: 1rem; /* Tamanho da fonte em proporção à largura da tela */
+    font-weight: 600;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute; /* Permite que o botão se sobreponha ao contêiner */
+    top: 60%; /* Ajusta a posição verticalmente */
+    left: 43%; /* Ajusta a posição horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    display: none; /* Inicialmente escondido */
+    z-index: 1000; /* Certifique-se de que o z-index é alto o suficiente */
+}
+
+#startButton {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 2vh; /* Usa unidades responsivas baseadas na altura da tela */
+    z-index: 1000;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px; /* Espaço acima do botão */
+    position: absolute; /* Permite que o botão se sobreponha ao contêiner */
+    top: 50%; /* Ajusta a posição verticalmente */
+    left: 50%; /* Ajusta a posição horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+}
+
+.botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #004f0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.botao-historia {
+    position: fixed;
+    right: 12vh;
+    top: 20px;
+    background-color: #004f0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 4;
+}
+
+a{
+    color: white;
+}
+
+button{
+    cursor: pointer;
+
+}
+
+.botao-mute {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    background-color: #004f0c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1vh;
+    font-size: 2vh;
+    cursor: pointer;
+    z-index: 2;
+}
