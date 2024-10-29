@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="toturialPong.css">
+    <title>Toturial do jogo do Ping Pong</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.location.href='pong.html'" title="Pressione 'ESC' para sair">Voltar</button>
+
+
+    <div class="historia-container">
+        <p class="imagem3">
+            <img src="imagensPong/setasRot.png">  
+        </p>
+        <p>
+            As setas do jogador 1, são as teclas de "w" e "S". W vai para cime e S para baixo. 
+        </p>
+
+        <p class="imagem3">
+            <img src="imagensPong/WS.png">
+        </p>
+        <p>As setas do jogador 2, são as teclas em conjunto. Mas usando apenas as setinha para cima e para baixo.</p>
+
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            window.location.href = 'pong.html';
+        }
+    });
+
+    </script>
+
+</body>
+</html>

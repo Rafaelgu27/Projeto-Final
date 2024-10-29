@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#logo {
+    width: 45%;
+    position: absolute; 
+    left: 27%;
+    top: 5%;
+    justify-content: center; 
+}
+
+#hifen {
+    width: 3%;
+    position: absolute;
+    left: 46.8%; 
+    top: 9.5%; 
+}
+
+.asteroids {
+    position: absolute;
+    left: 70%; 
+    top: 32%; 
+}
+
+.cobra {
+    position: absolute;
+    left: 40%; 
+    top: 32%; 
+}
+
+.pacman {
+    position: absolute;
+    left: 10%; 
+    top: 32%; 
+}
+
+.pong {
+    position: absolute;
+    left: 25%; 
+    top: 65%; 
+}
+
+.tetris {
+    position: absolute;
+    left: 55%; 
+    top: 65%; 
+}
+
+.asteroids, .cobra, .pacman, .pong, .tetris {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: border-color 0.3s, padding 0.3s;
+}
+
+.asteroids:hover, .cobra:hover, .pacman:hover, .pong:hover, .tetris:hover {
+    border-color: orange;
+    padding: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pacman-animacao {
+    position: absolute;
+    top: 50%;
+    left: -55vw;
+    width: auto;
+    height: 10vh;
+    z-index: 9999;
+    display: flex; 
+    align-items: center; 
+    transition: left 3s linear;
+}
+
+.pacman-animacao img {
+    width: 10vh; 
+    z-index: 1;
+}
+
+.pacman-animacao2 {
+    position: absolute;
+    top: 50%;
+    right: -25vw; 
+    z-index: 9999;
+    display: none; 
+    transition: right 3s linear; 
+}
+
+.assustado {
+    width: 10vh; 
+    height: 10vh;
+}
+
+#pacman-animacao2 {
+    width: 10vh; 
+    height: 10vh; 
+    transform: scaleX(-1); 
+}
+
+.asteroid {
+    position: absolute;
+    width: 5vw; 
+    height: 5vw; 
+    background-size: cover;
+    transition: transform 10s linear;
+}
+
+.asteroid-mover {
+    transform: translateX(100vw);
+}
+
+.quadro {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    pointer-events: none; 
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+    transition: transform 0.2s; /* Adiciona uma transição suave ao movimento */
+}
+
